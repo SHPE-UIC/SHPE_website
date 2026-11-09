@@ -1,6 +1,11 @@
 import SectionTitle from '../components/ui/SectionTitle'
 import './Sponsors.css'
 
+const SPONSORS = [
+  { name: 'Campos EPC', logo: '/Sponsors/CamposEPC.png', url: 'https://camposepc.com' },
+  { name: 'Civil & Environmental Engineering Consultants', logo: '/Sponsors/CEC.png', url: 'https://www.cecinc.com' },
+]
+
 const WHY_SPONSOR = [
   '100+ paid members and 60+ events hosted last semester alone.',
   'Recognized as a Gold Chapter (1 of 4 nationwide) and a Region 6 Outstanding Chapter.',
@@ -17,7 +22,7 @@ export default function Sponsors() {
           <p>Partner with the Society of Hispanic Professional Engineers Student Chapter at UIC.</p>
         </div>
       </section>
-
+      
       <section className="sponsors-lead section-center">
         <p>
           Here at UIC SHPE, we strive to get the best out of being Latino students in engineering.
@@ -25,6 +30,19 @@ export default function Sponsors() {
           provide giveaways, and create opportunities that help our members grow into confident,
           career-ready engineers.
         </p>
+      </section>
+
+      <section className="sponsors-logos section-center" aria-labelledby="sponsors-logo-title">
+        <SectionTitle eyebrow="Our Partners" title="Thank You to Our Sponsors" />
+        <div className="sponsors-logo-grid">
+          {SPONSORS.map(({name, logo,url}) => (
+            <div className="sponsors-logo-card" key={name}>
+              <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${name} website`}>
+                <img src={logo} alt={`${name} logo`} loading="lazy"/>
+              </a>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="sponsors-package section-muted">
