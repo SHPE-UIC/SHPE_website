@@ -18,6 +18,28 @@
   padding-bottom: 56px;
 }
 
+.awards-pending {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.awards-pending-heading {
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+
+.awards-pending p {
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+
+.awards-pending-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .awards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

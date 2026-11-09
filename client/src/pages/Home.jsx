@@ -3,31 +3,8 @@ import heroPhoto from '../assets/home/HomePic.jpg'
 import statsPhoto from '../assets/home/Homepic2.jpg'
 import lookingAheadPhoto from '../assets/home/Homepic3.jpg'
 import recognitionPhoto from '../assets/home/homepage4.jpg'
-import SectionTitle from '../components/ui/SectionTitle'
 import GradientImage from '../components/ui/GradientImage'
-import BarChart from '../components/ui/BarChart'
 import './Home.css'
-
-// Ranked highest to lowest
-const MAJORS = [
-  { label: 'Mechanical Engineering', value: 6 },
-  { label: 'Computer Engineering', value: 5 },
-  { label: 'Electrical Engineering', value: 4 },
-  { label: 'Civil Engineering', value: 4 },
-  { label: 'Computer Science', value: 3 },
-  { label: 'Biomedical Engineering', value: 2 },
-  { label: 'Industrial Engineering', value: 1 },
-  { label: 'Environmental Engineering', value: 1 },
-  { label: 'Other', value: 1 },
-]
-
-// Kept in class order rather than ranked
-const YEARS = [
-  { label: 'Freshman', value: 5 },
-  { label: 'Sophomore', value: 13 },
-  { label: 'Junior', value: 6 },
-  { label: 'Senior', value: 3 },
-]
 
 export default function Home() {
   return (
@@ -118,17 +95,6 @@ export default function Home() {
           bleed
           className="home-panel-photo"
         />
-      </section>
-
-      {/* Demographics */}
-      <section className="home-demographics section-muted">
-        <div className="section-center">
-          <SectionTitle title="Demographics" />
-          <div className="home-demographics-charts">
-            <BarChart question="What is your major?" data={MAJORS} variant="blue" />
-            <BarChart question="What year are you in school?" data={YEARS} variant="orange" />
-          </div>
-        </div>
       </section>
     </main>
   )
