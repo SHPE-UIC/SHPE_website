@@ -17,7 +17,7 @@ export default function Alumni() {
           love to reconnect, hear what you&rsquo;re up to, invite you back for events, and find
           ways to keep our alumni network engaged with current members.
         </p>
-        <p>If you&rsquo;re interested, fill out the form below or reach out to our Graduate Ambassador.</p>
+        <p>If you&rsquo;re interested, fill out the form below or reach out to our Historian.</p>
         <div className="alumni-buttons">
           <a
             className="btn btn-primary"
@@ -27,12 +27,12 @@ export default function Alumni() {
           >
             Fill Out the Form
           </a>
-          <a className="btn btn-outline-navy" href="mailto:grad.shpe.uic@gmail.com">
-            Email Our Graduate Ambassador
+          <a className="btn btn-outline-navy" href="mailto:historian.shpe.uic@gmail.com">
+            Email Our Historian
           </a>
         </div>
         <p className="alumni-contact-note">
-          Kloey Acevedo Bernal, Graduate Ambassador: grad.shpe.uic@gmail.com
+          Hugo Garcia, Historian: historian.shpe.uic@gmail.com
         </p>
       </section>
     </main>
