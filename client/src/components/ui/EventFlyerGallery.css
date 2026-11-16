@@ -1,0 +1,124 @@
+.event-flyer-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.event-flyer-trigger:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+.event-flyer-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(0, 20, 61, 0.94);
+}
+
+.event-flyer-lightbox-dialog {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.event-flyer-lightbox-image {
+  max-width: min(100%, 1100px);
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: var(--shadow-lg);
+}
+
+.event-flyer-lightbox-close,
+.event-flyer-lightbox-arrow {
+  position: fixed;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--navy);
+  font-size: 1.15rem;
+  transition: background var(--transition), color var(--transition), opacity var(--transition);
+}
+
+.event-flyer-lightbox-close {
+  top: 20px;
+  right: 20px;
+}
+
+.event-flyer-lightbox-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.event-flyer-lightbox-previous {
+  left: 20px;
+}
+
+.event-flyer-lightbox-next {
+  right: 20px;
+}
+
+.event-flyer-lightbox-close:hover,
+.event-flyer-lightbox-arrow:not(:disabled):hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.event-flyer-lightbox-arrow:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.event-flyer-lightbox-close:focus-visible,
+.event-flyer-lightbox-arrow:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .event-flyer-lightbox {
+    padding: 18px 10px;
+  }
+
+  .event-flyer-lightbox-image {
+    max-height: 86vh;
+  }
+
+  .event-flyer-lightbox-close,
+  .event-flyer-lightbox-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .event-flyer-lightbox-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .event-flyer-lightbox-previous {
+    left: 8px;
+  }
+
+  .event-flyer-lightbox-next {
+    right: 8px;
+  }
+}

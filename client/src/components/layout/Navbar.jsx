@@ -29,6 +29,7 @@ const NAV_LINKS = [
   { label: 'Sponsors', to: '/sponsors' },
   { label: 'Calendar', to: '/calendar' },
   { label: 'Alumni', to: '/alumni' },
+  { label: 'Past Events', to: '/past-events' },
 ]
 
 export default function Navbar() {

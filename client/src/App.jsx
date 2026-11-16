@@ -16,6 +16,7 @@ import Awards from './pages/Awards'
 import Calendar from './pages/Calendar'
 import JoinUs from './pages/JoinUs'
 import Alumni from './pages/Alumni'
+import PastEvents from './pages/PastEvents'
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/past-events" element={<PastEvents />} />
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/alumni" element={<Alumni />} />
           <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
